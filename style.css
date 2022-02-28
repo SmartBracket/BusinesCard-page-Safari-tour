@@ -1,0 +1,204 @@
+:root{
+   --fd: 'Fredoka One',sans-serif;
+   --mn: 'Montserrat', sans-serif;
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   font-size: 10px;
+  
+}
+.container{
+   max-width: 950px;
+   margin: 0 auto;
+}
+
+.top{
+ background: url(imgs/sun.png)no-repeat top center,
+ url(imgs/bg.png) no-repeat top center #d6e6ef;
+ background-size: cover,
+ cover;
+}
+/* header */
+.header{
+   position: relative;
+   top:-50px;
+   width: 100%;
+   height: 120px;
+   padding-bottom: 30px;
+   border-radius:5px;
+   font-size: 1.7em;
+   background-color: #4cb2e7;
+   transform: rotate(-2deg);
+}
+.logo{
+   position: relative;
+   padding-bottom: 18px;
+   top:5px;
+   left: 35px;
+   width: 250px;
+   height: 140px;
+   background-color:#e1ecf2;
+   border: 6px solid white;
+   border-radius: 10px;
+   box-shadow: 0 5px 10px #127ea5;
+   text-align: center;
+   font-family: var(--fd);
+   font-size: 1.8em;
+   color: #4cb2e7;
+   display: inline-flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   transform: rotate(-2deg);
+}
+.logo p{
+   margin-top: 5px;
+   font-size: .5em;
+}
+
+.header__menu{
+   display: inline-block;
+   transform: rotate(2deg);
+   margin-left: 60px;
+   font-family: var(--mn);
+   font-weight: 700;
+   color:white;
+}
+.header__menu ul{
+   display: flex;
+}
+.header__menu li{
+   list-style: none;
+   margin-right: 30px;
+}
+.header__menu li:last-of-type{
+   margin-right: 0;
+}
+/* form */
+.form{
+   position: relative;
+   width: 320px;
+   height: 475px;
+   border: 7px solid #7ebee0;
+   border-radius: 22px;
+   background: url(imgs/ladder.png) left 20px bottom no-repeat #299fca;
+}
+.form fieldset{
+   padding-right: 10px;
+   margin-top: 25px;
+   border:none;
+   font-family: var(--mn);
+   font-weight: 700;
+   display: flex;
+   flex-direction: column;
+}
+.form fieldset legend{
+   display: flex;
+   align-items:center;
+   position: relative;
+   height: 40px;
+   left: -15px;
+   margin-bottom: 25px;
+   padding: 0 55px 0 20px;
+   font-size: 2.1em;
+   background-color: #ded90e;
+   border-radius:5px 0 0 5px;
+   box-shadow: -1.5px 1px 2px #127ea5;
+}
+.form fieldset legend::before {
+   content:'';
+   position: absolute;
+   top:0;
+   right: 0;
+   border-right: 20px solid #299fca;
+   border-top: 20px solid transparent;
+   border-bottom: 20px solid transparent;
+}
+
+.form fieldset p{
+   margin-bottom: 15px;
+   display: grid;
+   grid-template-columns: 80px 1fr;
+   align-items:center;
+   column-gap: 10px;
+}
+.form fieldset p:last-of-type {
+   margin-bottom: 0;
+}
+.form p input,
+.form select,
+.form textarea {
+   padding: 5px;
+   border: 4px solid #7ebee0;
+   border-radius: 6px;
+   outline: none;
+   color: #299fca;
+   font-family: var(--mn);
+   font-weight: 700;
+}
+.form textarea{
+   height: 80px;
+}
+.form p:last-of-type label{
+   align-self: flex-start;
+}
+.form textarea{
+   resize: none;
+}
+.form p label{
+   display: inline-block;
+   width: 85px;
+
+   font-size: 1.5em;
+   text-align: right;
+   color:white;
+   text-shadow: 1px 0 1px #2090b9,
+   0 1px 1px #2090b9,
+   -1px 0 1px #2090b9,
+   0 -1px 1px #2090b9;
+}
+
+.form input[type='submit']{
+   align-self:flex-end;
+   height: 35px;
+   margin-top: 10px;
+   padding: 0 20px;
+   background: linear-gradient(to top, #fbee05, #d6cc09);
+   font-family: var(--mn);
+   font-weight: 700;
+   color:#299fca;
+   border:none;
+   border-radius:5px;
+}
+.book>.container{
+   display: flex;
+   justify-content: flex-end;
+}
+.offer-banner{
+   align-self:center;
+   flex:1 0 auto;
+   height: 300px;
+   margin-right: 40px;
+   background: url(imgs/plane.png) left top  no-repeat,url(imgs/header-cloud.png) right center no-repeat;
+   background-size: 320px 140px,contain;
+   font-family: var(--fd);
+   text-align: center;
+   font-size: 5em;
+   color:#127ea5;
+   display: flex;
+   flex-direction: column;
+   align-items:flex-end;
+   justify-content: flex-end;
+   padding: 0 45px 65px 0;
+}
+.offer-banner span{
+   width: 320px;
+}
+.offer-banner p{
+   width: 320px;
+   font-size: .5em;
+   color:#ded90e;
+}
