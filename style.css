@@ -211,9 +211,9 @@ body{
 /* tours */
 .tours{
    position: relative;
-   /* top:-230px; */
    width: 100%;
-   min-height: 500px;
+   padding-bottom: 10px;
+   min-height: 350px;
    background-color: #127ea5;
 }
 .tours__clouds{
@@ -352,7 +352,8 @@ body{
 .tour-list__articles li{
    margin-top: 15px;
    display: grid;
-   grid-template-columns: 1fr 60px 100px;
+   grid-template-columns: 1fr 60px 110px;
+   align-items:center;
    column-gap: 20px;
    font-family: var(--mn);
    font-weight: 300;
@@ -472,4 +473,125 @@ body{
 }
 .info__descr p {
    font-size: 1.4em;
+}
+
+/* footer */
+.footer {
+   font-family: var(--mn);
+   background-color: #1380a7;
+}
+.footer>.container{
+   padding-top: 25px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 280px;
+}
+.news fieldset {
+   border:none;
+}
+.news legend{
+   margin-bottom: 15px;
+   font-size: 2.5em;
+   color:white;
+   font-weight: 700;
+}
+
+.footer input::placeholder,
+.footer textarea::placeholder {
+   color: #80a2b3;
+}
+.news input[type="email"]{
+   min-width: 150px;
+   height: 32px;
+   padding: 8px 12px;
+   margin-right: 10px;
+   color:white;
+   outline: 0;
+   border:insert 1px;
+   border-color: #539cb6;
+   border-radius:6px;
+   background-color: #0f6686;
+}
+.footer input[type="submit"]{
+   width: 90px;
+   height: 32px;
+   background-color: #d6e6ef;
+   border:none;
+   border-radius:5px;
+   font-weight: 700;
+   color: #1788b1;
+   cursor: pointer;
+}
+
+.soc{
+   margin-top: 25px;
+}
+.soc>p{
+   margin-bottom: 15px;
+   font-size: 2.5em;
+   color:white;
+   font-weight: 700;
+}
+.soc li{
+   list-style: none;
+   display: inline-block;
+   margin-right: 6px;
+}
+.soc li:last-of-type {
+   margin-right: 0;
+}
+.soc li>img{
+   width: 45px;
+   height: 45px;
+   object-fit: cover;
+}
+.contact-us p:first-child{
+   margin-bottom: 15px;
+   font-size: 2.5em;
+   font-weight: 700;
+}
+.contact-us p {
+   font-size: 1.6em;
+   color: white;
+   margin-bottom: 10px;
+}
+.contact-form>p{
+   margin-bottom: 15px;
+   font-size: 2.5em;
+   color:white;
+   font-weight: 700;
+}
+.contact-form form{
+   display: flex;
+   flex-direction: column;
+   max-width: 280px;
+}
+.contact-form input{
+   max-width: 195px;
+}
+.contact-form input,
+.contact-form textarea{
+      height: 32px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      color:white;
+      outline: 0;
+      border:insert 1px;
+      border-color: #539cb6;
+      border-radius:6px;
+      background-color: #0f6686;
+}
+.contact-form textarea{
+   min-height: 100px;
+   resize: none;
+}
+
+.contact-form input[type="submit"] {
+   align-self:flex-end;
+}
+
+.rights{
+   padding: 12px 0;
+   font-size: 1.4em;
+   color:white;
+   text-align: center;
 }
